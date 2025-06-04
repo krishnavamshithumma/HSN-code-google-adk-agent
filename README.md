@@ -10,8 +10,6 @@ This project implements an HSN (Harmonized System of Nomenclature) code agent us
 .
 ├── data
 │   └── HSN_Master_Data.csv
-├── __pycache__
-│   └── utils.cpython-312.pyc
 ├── README.md
 ├── requirements.txt
 └── src
