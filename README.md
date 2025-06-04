@@ -47,7 +47,10 @@ Follow these steps to set up and run the project locally:
 
 First, clone the repository to your local machine:
 
-git clone https://github.com/krishnavamshithumma/HSN-code-google-adk-agent.gitcd HSN-code-google-adk-agent
+```bash
+git clone https://github.com/krishnavamshithumma/HSN-code-google-adk-agent.git
+cd HSN-code-google-adk-agent
+```
 
 ### **2\. Add Your Data**
 
@@ -56,16 +59,18 @@ Place your HSN master data CSV file (e.g., HSN\_Master\_Data.csv) inside the dat
 ### **3\. Configure Google API Key**
 
 Create a .env file inside the src folder and add your Google API key as follows:
-
-GOOGLE\_GENAI\_USE\_VERTEXAI=FALSEGOOGLE\_API\_KEY="paste\_your\_api\_key\_here"
-
+```text
+GOOGLE_GENAI_USE_VERTEXAI=FALSE
+GOOGLE_API_KEY="paste_your_api_key_here"
+```
 Replace "paste\_your\_api\_key\_here" with your actual Google API key.
 
 ### **4\. Install Requirements**
 
 Install all the necessary Python packages using pip:
-
+```bash
 pip install -r requirements.txt
+```
 
 **How to Run the Agent**
 ------------------------
@@ -73,13 +78,13 @@ pip install -r requirements.txt
 You can run the HSN code agent either through the terminal or via a web interface.
 
 ### **Running via Terminal**
-
+```bash
 adk run src
-
+```
 ### **Running via Web Interface**
-
+```bash
 adk web
-
+```
 When prompted on the web interface, make sure to select src as the agent directory.
 
 **Interacting with the Agent**
@@ -89,12 +94,14 @@ Once the agent is running (either in terminal or web mode), you can interact wit
 
 ### **Examples:**
 
-*   **Validate HSN Code:**01011010_(Expected output will include validation status, format validity, existence, hierarchy validation, and description if it exists.)_
+*   **Validate HSN Code:** 01011010_(Expected output will include validation status, format validity, existence, hierarchy validation, and description if it exists.)
     
-*   **Suggest HSN Codes from Description:**LIVE HORSES_(Expected output will include suggestions for matching HSN codes and their descriptions.)_
+*   **Suggest HSN Codes from Description:** LIVE HORSES_(Expected output will include suggestions for matching HSN codes and their descriptions.)_
     
 
 **Screenshots**
 ---------------
-
-_(You would insert your screenshots here, showing examples of the agent's output for both validation and suggestion queries.)_
+![Ouput Images1](images/outputimage1.png)
+![Ouput Images2](images/outputimage2.png)
+![Ouput Images3](images/outputimage3.png)
+![Ouput Images4](images/outputimage4.png)
